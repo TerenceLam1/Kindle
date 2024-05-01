@@ -5,10 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Sync highlights
-        uses: addnab/docker-run-action@v4
+        uses: addnab/docker-run-action@v3
         with:
           image: ghcr.io/arkalim/kindle-to-notion:master
           run: node /code/dist/main.js
