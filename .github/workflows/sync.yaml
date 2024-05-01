@@ -8,7 +8,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Sync highlights
-        uses: addnab/docker-run-action@v3
+        uses: addnab/docker-run-action@v4
         with:
           image: ghcr.io/arkalim/kindle-to-notion:master
           run: node /code/dist/main.js
